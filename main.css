@@ -5,3 +5,31 @@ body {
   background: url('assets/saad-chaudhry-YNM4KStg78I-unsplash%20m%C3%A1solat.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+.profile_card {
+  width: 480px;
+  max-width: calc(100vw - 10px);
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+img {
+  width:200px;
+  height:200px;
+  border-radius: 2%;
+  
+}
+.flip-box-inner{
+  position: center;
+  transition: transform 0.8s;
+  transform-style: : preserve-3d;
+}
+.flip-box-inner:hover {
+  transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: center;
+  -webki-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+flip-box-back {
+  transform: rotateY(180deg);
+}
