@@ -8,34 +8,26 @@ body {
   justify-content: center;
   align-items: center;
 }
-.head .about {
-  width: 95%;
+.head, .about {
   margin: 0 auto;
 }
-.content {
-  margin-top:0px;
-
-}
 .profile_card {
-  width: 750px;
-  height: 500px;
-  margin-top:200px;
-  padding: 20px;
+  width: 700px;
+  height: 650px;
+  padding: 30px;
   background-color: hsla(0, 0%, 100%, .5);
   max-width: calc(100vw - 10px);
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
 }
+
 img {
   width: 200px;
   height: 200px;
   border-radius: 3%;
   border: 1px solid grey;
 }
-.profile_image {
-  margin-top: -35%;
-} 
-}
+
 .flip-box {
   background-color: transparent;
   width: 200px;
@@ -45,10 +37,10 @@ img {
 }
 
 .flip-box-inner{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 0.5s;
+  transition: transform 0.8s;
   transform-style: : preserve-3d;
 }
 .flip-box:hover .flip-box-inner {
@@ -61,16 +53,18 @@ img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.flip-box-front{
-  background-color: white;
-}
 .flip-box-back {
-  background-color: black;
   transform: rotateY(180deg);
+  }
+
+.content {
+  float: right;
+  margin-top: -200px;
 }
 .contact {
   font-size: 20px;
 }
+
 .contact>i:hover {
   color: white; 
 }
@@ -81,9 +75,9 @@ li {
   display: inline;
 }
 .icon {
-  font-size: 25px;
+  font-size: 40px;
   color:rgb(250,250,210);
-  letter-spacing: 15px;
+  letter-spacing: 25px;
 }
 .icon:hover {
   color: rgb(0,206,209);
@@ -91,5 +85,6 @@ li {
 .about {
   text-align: justify;
   font-size: 18px;
-  
+  line-height: 1,1px;
+  margin-top: 30px;
 }
