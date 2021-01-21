@@ -16,7 +16,7 @@ body {
   height: 650px;
   padding: 30px;
   background-color: hsla(0, 0%, 100%, .5);
-  max-width: calc(100vw - 10px);
+  max-width: calc(100vh - 10px);
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -32,16 +32,17 @@ img {
   background-color: transparent;
   width: 200px;
   height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;  
+  border: 1px solid grey;
+  perspective: 1000px;
+  margin-left: 10px
 }
 
 .flip-box-inner{
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   transition: transform 0.8s;
-  transform-style: : preserve-3d;
+  transform-style: preserve-3d;
 }
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
@@ -60,9 +61,11 @@ img {
 .content {
   float: right;
   margin-top: -200px;
+  margin-right: 50px;
 }
+
 .contact {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .contact>i:hover {
@@ -86,5 +89,5 @@ li {
   text-align: justify;
   font-size: 18px;
   line-height: 1,1px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
